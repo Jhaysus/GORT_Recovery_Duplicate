@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap');
+
+.overpass-mono-name {
+    font-family: "Overpass Mono", monospace;
+    font-optical-sizing: 2px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.footer {
+    
+    background-color: #262528;
+    padding: 100px;
+    padding-left: 10vw;
+    height: 600px;
+    color: white;
+    
+    
+}
+
+.h1{
+    font-size: 45px;
+    font-family: "Overpass Mono";
+    font-weight: 350;
+    padding-top: 20px;
+    text-align: left;
+    
+}
+
+.p {
+    font-family: "Overpass Mono";
+    max-width: 33rem;
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: left;
+
+
+
+}
+
+
+.footer a:hover{
+    text-decoration: underline dotted;
+}
+
+
+
+.blueBar {
+    background-color: #1FE1EB;
+    height: 20px;
+    width: 100%;
+}

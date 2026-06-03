@@ -1,0 +1,167 @@
+/* ── Image Hero ── */
+.imageWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../public/GORT-Night.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-lexend-exa);
+    padding: clamp(1rem, 8vw, 8rem);
+    box-sizing: border-box;
+    gap: 2.5rem;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.imageWrapper h1 {
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    margin: 0 0 1rem 0;
+}
+
+.imageWrapper a {
+    font-size: clamp(0.875rem, 2.5vw, 2rem);
+    margin: 0;
+    max-width: 70ch;
+}
+
+/* ── Text Group ── */
+.textGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: min(70ch, 100%);
+}
+
+.textGroup .linkButton {
+    align-self: center;
+}
+
+/* ── Link Button ── */
+.linkButton {
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: clamp(0.3rem, 1vw, 1rem) clamp(1rem, 3vw, 4rem);
+    color: white;
+    border-radius: 999px;
+    display: inline-block;
+    width: fit-content;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.linkButton:hover {
+    background-color: #4d2a88;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+}
+
+.linkButton:active {
+    border-color: #4d2a88;
+    transform: scale(0.97);
+}
+
+.linkButtonActive {
+    background-color: #4d2a88;
+    border-color: #4d2a88;
+    color: white;
+}
+
+/* ── Screen Wrapper ── */
+.screenWrapper {
+    background: linear-gradient(to bottom, transparent 0%, black 15%);
+    padding: clamp(1rem, 5vw, 4rem);
+    color: white;
+}
+
+/* ── How To Section ── */
+.howToSection {
+    margin-top: 60px;
+    padding: clamp(1rem, 3vw, 2rem);
+    background: black;
+    border-radius: 24px;
+    border: 2px solid #4d2a88;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.howToTitle {
+    font-size: clamp(1.2rem, 3vw, 28px);
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-family: var(--font-lexend-exa);
+}
+
+.howToList {
+    line-height: 1.8;
+    font-size: clamp(0.875rem, 2vw, 16px);
+    color: #e6e6e6;
+    padding-left: 24px;
+    font-family: var(--font-lexend-exa);
+}
+
+/* ── Search By Cards ── */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(1rem, 3vw, 2rem);
+}
+
+.infoCard {
+    background: #000000;
+    border-radius: 24px;
+    border: 2px solid #4d2a88;
+    padding: clamp(1rem, 3vw, 2rem);
+    color: white;
+}
+
+.cardTitle {
+    font-size: clamp(1rem, 2.5vw, 22px);
+    font-weight: 400;
+    font-family: var(--font-lexend-exa);
+    margin-bottom: 12px;
+}
+
+.cardText {
+    font-size: clamp(0.875rem, 2vw, 16px);
+    color: #e6e6e6;
+    line-height: 1.8;
+    font-family: var(--font-lexend-exa);
+}
+
+/* ── Two Categories Section ── */
+.tabInfoSection {
+    max-width: 1200px;
+    margin: 3rem auto 0 auto;
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    color: white;
+    font-family: var(--font-lexend-exa);
+}
+
+.tabInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+    padding-bottom: 4rem;
+}
+
+.calibrationList {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 12px;
+    line-height: 2;
+    font-size: clamp(0.875rem, 2vw, 16px);
+    color: #e6e6e6;
+    font-family: var(--font-lexend-exa);
+}

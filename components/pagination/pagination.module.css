@@ -1,0 +1,45 @@
+.pagination_container { 
+  display: flex; 
+  gap: 12px; 
+  max-width: 80%; 
+  margin: 2rem auto 1.5rem auto; 
+  justify-content: center; 
+  font-family: var(--font-lexend-exa); 
+}
+
+.pageNumbers { 
+  display: flex; 
+  gap: 6px; 
+}
+
+/* Use a COMMA to apply styles to both classes */
+.page_button, .number_button { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px 24px; 
+  border-radius: 10px; 
+  border: 2px solid #4d2a88; 
+  background: transparent; 
+  color: white; 
+  font-family: var(--font-lexend-exa); 
+  font-size: 14px; 
+  cursor: pointer; 
+  transition: background 0.2s ease; 
+}
+
+/* Add a comma here too */
+.page_button:hover:not(:disabled), .number_button:hover { 
+  background-color: #1e0a4a; 
+}
+
+/* This targets the active page number */
+.number_button.active { 
+  background: #4d2a88; 
+}
+
+/* Helpful to dim the back/next buttons when they can't be used */
+.page_button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
