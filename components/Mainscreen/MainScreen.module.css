@@ -54,8 +54,8 @@
 }
 
 .linkButton:hover {
-    background-color: #4d2a88;
-    border-color: white;
+    background-color: #321c59;
+    border-color: purple;
     border-width: 2px;
     color: white;
 }
